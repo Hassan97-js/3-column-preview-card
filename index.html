@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Frontend Mentor | 3-column preview card component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-content flex flex-xy-center">
+      <div class="preview-card grid grid-cols--3">
+        <div class="car car--sedans">
+          <div class="preview-card-info">
+            <img class="preview-card-icon" src="/images/icon-sedans.svg" alt="Sedan car icon" />
+
+            <h2 class="heading-primary preview-card-heading">Sedans</h2>
+            <p class="preview-card-description">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+          </div>
+
+          <a href="#" class="btn btn--sedans">Learn More</a>
+        </div>
+
+        <div class="car car--suvs">
+          <div class="preview-card-info">
+            <img class="preview-card-icon" src="/images/icon-suvs.svg" alt="SUV car icon" />
+
+            <h2 class="heading-primary preview-card-heading">SUVs</h2>
+            <p class="preview-card-description">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+          </div>
+
+          <a href="#" class="btn btn--suvs">Learn More</a>
+        </div>
+
+        <div class="car car--luxury">
+          <div class="preview-card-info">
+            <img class="preview-card-icon" src="/images/icon-luxury.svg" alt="Luxury car icon" />
+
+            <h2 class="heading-primary preview-card-heading">Luxury</h2>
+            <p class="preview-card-description">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+          </div>
+
+          <a href="#" class="btn btn--luxury">Learn More</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>

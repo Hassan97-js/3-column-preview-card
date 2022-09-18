@@ -1,0 +1,239 @@
+/*
+
+Design settings:
+
+--- 01 TYPOGRAPHY SYSTEM (px)
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Line heights:
+Default:
+Small:
+Medium:
+Paragraph default:
+
+- Letter spacing:
+Heading letter spacing:
+Subheading letter spacing:
+
+--- 02 COLORS
+(Primary with tints, shades and accent colors)
+
+- Primary:
+- Tints:
+- Shades:
+- Accents:
+- Greys:
+  - dark:
+  - medium:
+  - light:
+- White:
+
+--- 03 IMAGES
+- No system
+
+--- 04 ICONS
+- source:
+
+--- 05 SHADOWS
+- No system
+
+--- 06 BORDER RADIUS:
+
+
+--- 07 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 144rem;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1;
+}
+
+main {
+  min-height: 100vh;
+}
+
+/* ******************************** */
+/* LAYOUT STYLES */
+/* ******************************** */
+.preview-card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.car {
+  padding: 6.4rem 4.8rem;
+}
+
+.car--sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.car--suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.car--luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.preview-card-icon {
+  width: 8rem;
+  margin-bottom: 3.2rem;
+}
+
+/* ******************************** */
+/* TYPOGRAPHY STYLES */
+/* ******************************** */
+.heading-primary {
+  margin-bottom: 3.2rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 5.2rem;
+  line-height: 1.2;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+
+.preview-card-description {
+  width: 21ch;
+  margin-bottom: 8rem;
+  font-size: 2rem;
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn--sedans:link,
+.btn--sedans:visited {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn--suvs:link,
+.btn--suvs:visited {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn--luxury:link,
+.btn--luxury:visited {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.8rem;
+  border: 2px solid transparent;
+  font-size: 2rem;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 100px;
+  transition: all 200ms ease;
+}
+
+.btn:hover,
+.btn:active {
+  border-color: hsl(0, 0%, 95%);
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+/* ******************************** */
+/* UTILITIES STYLES */
+/* ******************************** */
+
+/* Flexbox */
+.flex {
+  display: flex !important;
+}
+
+.flex-xy-center {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Grid */
+.grid {
+  display: grid !important;
+}
+
+.grid-cols--3 {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* ******************************** */
+/* Media Queries */
+/* ******************************** */
+
+/* 1200px breakpoint */
+@media all and (max-width: 75em) {
+  html {
+    /* 8.48px */
+    font-size: 53%;
+  }
+}
+
+/* 970px breakpoint */
+@media all and (max-width: 60.625em) {
+  html {
+    /* 6.88px */
+    font-size: 43%;
+  }
+}
+
+/* 800px breakpoint */
+@media all and (max-width: 50em) {
+  html {
+    /* 5.6px */
+    font-size: 35%;
+  }
+
+  main {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .preview-card-icon {
+    width: 9.6rem;
+  }
+
+  .heading-primary {
+    font-size: 6.2rem;
+  }
+
+  .preview-card-description,
+  .btn:link,
+  .btn:visited {
+    font-size: 3rem;
+  }
+
+  .grid-cols--3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* 670px breakpoint */
+@media all and (max-width: 41.875em) {
+  html {
+    /* 5.44px */
+    font-size: 34%;
+  }
+}
